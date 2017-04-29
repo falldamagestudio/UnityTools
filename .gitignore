@@ -1,0 +1,12 @@
+
+# Ignore Unity/Visual Studio generated files
+*/Library
+*/Temp
+*/.vs
+*/*.sln
+*/*.csproj
+*/Build.*.log
+*/Build
+
+# Ignore Unity project configuration
+*/ProjectSettings
