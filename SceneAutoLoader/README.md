@@ -4,14 +4,15 @@ A small Unity Editor extension: temporarily switch to a specific scene when the 
 
 This is a continuation of a script developed in [a Unity forum thread](http://forum.unity3d.com/threads/157502-Executing-first-scene-in-build-settings-when-pressing-play-button-in-editor).
 
-## This works well
+## How to use
 
-* Switches to another scene when the user presses Play
-* Switches back to the original Editor UI configuration when returning to edit mode
+* Drop this into your Unity project. Some new menu options will appear under "Window > Scene Auto Loader".
+* If you activate it and pick a master scene, it will switch to that scene whenever you press Play in the Editor
+* When you return to Edit mode, the Editor UI will switch back to its original UI configuration
 
 ## Gotchas
 
-* Unity will first begin loading all the scenes that were open in the Editor, before switching to the specified scene.
+Unity will first begin loading all the scenes that were open in the Editor, before switching to the specified scene.
 All GameObjects/Components in those scenes will receive Awake/OnEnable/OnDisable/OnDestroy callbacks. You need to ensure that
 all your scenes behave well if a scene is quickly loaded/unloaded like this if you want to use this script.
 
